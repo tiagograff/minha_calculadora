@@ -1,0 +1,24 @@
+:root{
+    --white-color: #f2f2f2;
+    --gray-color-light: #9fa4ae;
+    --gray-color-dark: #58585f;
+    --black-color: #0a111f;
+    --blue-color-light: #466ec3;
+    --blue-color-dark: #14213d;
+    --green-color-light: #8bdf7c;
+    --green-color-dark: #2f8320;
+    --yellow-color-light: #fdb035;
+    --yellow-color-dark: #655a01;
+    --red-color-light: #ee5858;
+    --red-color-dark: #ba1212;
+
+}
+
+* {
+	padding:0;
+	margin:0;
+	vertical-align:baseline;
+	list-style:none;
+	text-decoration: none;
+	border:0;
+}
