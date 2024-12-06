@@ -147,10 +147,10 @@ body {
 
 footer{
     padding: 0 0 10px 10px;
+    color: var(--black-color);
 }
 
 footer a{
-
     color: var(--black-color);
 }
 
@@ -158,7 +158,7 @@ footer a{
 @media (max-width: 481px) {
     .nav__image.lightmode, .nav__image.darkmode{
         text-align: center;
-        padding: 20px 0 0 0;
+        padding: 3rem 0 0 0;
         margin: auto 0;
     }
 
@@ -166,6 +166,6 @@ footer a{
         text-align: center;
     }
     .calculator{
-        margin: 20px auto auto auto;
+        margin: 3rem auto auto auto;
     }
   }
