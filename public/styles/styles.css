@@ -145,4 +145,27 @@ body {
 [data-value="/"] { grid-area: btn04; }
 [data-value="n"] { grid-area: btn08; }
 
+footer{
+    padding: 0 0 10px 10px;
+}
 
+footer a{
+
+    color: var(--black-color);
+}
+
+/* responsividade */
+@media (max-width: 481px) {
+    .nav__image.lightmode, .nav__image.darkmode{
+        text-align: center;
+        padding: 20px 0 0 0;
+        margin: auto 0;
+    }
+
+    .nav{
+        text-align: center;
+    }
+    .calculator{
+        margin: 20px auto auto auto;
+    }
+  }
