@@ -1,18 +1,32 @@
-:root{
+:root {
     --white-color: #f2f2f2;
-    --gray-color-light: #9fa4ae;
-    --gray-color-dark: #58585f;
     --black-color: #0a111f;
-    --blue-color-light: #466ec3;
-    --blue-color-dark: #14213d;
-    --green-color-light: #8bdf7c;
-    --green-color-dark: #2f8320;
-    --yellow-color-light: #fdb035;
-    --yellow-color-dark: #655a01;
-    --red-color-light: #ee5858;
-    --red-color-dark: #ba1212;
+    --gray-color: #9fa4ae;
+    --blue-color: #466ec3;
+    --green-color: #8bdf7c;
+    --yellow-color: #fdb035;
+    --red-color: #ee5858;
+  }
 
-}
+:root.lightmode {
+    --white-color: #f2f2f2;
+    --black-color: #0a111f;
+    --gray-color: #9fa4ae;
+    --blue-color: #466ec3;
+    --green-color: #8bdf7c;
+    --yellow-color: #fdb035;
+    --red-color: #ee5858;
+  }
+  
+  :root.darkmode {
+    --white-color: #0a111f;
+    --black-color: #f2f2f2;
+    --gray-color: #58585f;
+    --blue-color: #14213d;
+    --green-color: #2f8320;
+    --yellow-color: #655a01;
+    --red-color: #ba1212;
+  }
 
 * {
 	padding:0;
@@ -22,3 +36,26 @@
 	text-decoration: none;
 	border:0;
 }
+
+body {
+    background: radial-gradient(circle at top right, var(--blue-color), var(--white-color));
+    height: 100vh;
+    width: 100%;
+}
+
+/* navegação - controle de modo */
+
+.nav{
+    text-align: end;
+    width: 100%;
+}
+
+.nav__image.lightmode, .nav__image.darkmode{
+    width: 50px;
+    text-align: end;
+    padding: 50px 50px 0 0;
+    cursor: pointer;
+}
+
+/* calculadora */
+
