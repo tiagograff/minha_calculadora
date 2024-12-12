@@ -15,7 +15,7 @@ document.addEventListener("keyup", blockBoard);
 charButton.forEach((key) => {
   key.addEventListener("click", () => {
     if (key.classList.contains("operator")) {
-      const value = key.dataset.value + " ";
+      const value = key.dataset.value;
       display.value += value;
     } else if (
       key.classList.contains("number") ||
@@ -24,9 +24,12 @@ charButton.forEach((key) => {
       const value = key.dataset.value;
       display.value += value;
     } else if (key.classList.contains("equal")) {
-      console.log("aqui vai ser calculado");
+      const result = math.evaluate(display.value);
+      display.value = result;
     } else if (key.classList.contains("clear")) {
       display.value = "";
+    } else if (key.classList.contains("back")) {
+      display.value = display.value.slice(0, -1);
     }
   });
 });
