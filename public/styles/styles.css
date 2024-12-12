@@ -99,7 +99,7 @@ body {
         "btn05 btn06 btn07 btn08"
         "btn09 btn10 btn11 btn17"
         "btn12 btn13 btn14 btn17"
-        "btn16 btn16 btn15 btn18";
+        "btn16 btn16 btn18 btn15";
     gap: 1.25rem;
 
 }
@@ -132,6 +132,11 @@ body {
     background-color: var(--yellow-color)
 }
 
+#backButton{
+    grid-area: btn08;
+    background-color: var(--red-color);
+}
+
 /* As demais áreas */
 [data-value="1"] { grid-area: btn05; }
 [data-value="2"] { grid-area: btn06; }
@@ -147,7 +152,6 @@ body {
 [data-value="-"] { grid-area: btn02; }
 [data-value="*"] { grid-area: btn03; }
 [data-value="/"] { grid-area: btn04; }
-[data-value="n"] { grid-area: btn08; }
 [data-value='.'] { grid-area: btn18;}
 
 footer{
